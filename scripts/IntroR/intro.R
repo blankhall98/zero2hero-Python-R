@@ -104,3 +104,91 @@ sumar <- function(lista){
 sumar(salario)
 
 sumar(edades)
+
+####### REPASO
+a <- 1
+
+5 > 6
+
+espectadores <- c(100,86,76,67,62,53)
+
+for(e in espectadores){
+  print(e)
+}
+
+for(i in 1:length(espectadores)){
+  print(espectadores[i])
+}
+
+#INPUTS
+edad <- 17
+sexo <- 'M' #M / F
+
+#ALGORITMO
+if(sexo == 'M'){
+  if(edad >= 18){
+    estado <- 'aceptado'
+  }else{
+    estado <- 'rechazado'
+  }
+}else{
+  if(edad >= 16){
+    estado <- 'aceptado'
+  }else{
+    estado <- 'rechazado'
+  }
+}
+#RETURN / OUTPUT
+print(estado)
+
+antro <- function(edad,sexo){
+  if(sexo == 'M'){
+    if(edad >= 18){
+      estado <- 'aceptado'
+    }else{
+      estado <- 'rechazado'
+    }
+  }else{
+    if(edad >= 16){
+      estado <- 'aceptado'
+    }else{
+      estado <- 'rechazado'
+    }
+  }
+  print(estado)
+}
+
+#aplicar una funcion a un conjunto
+edades <- c(12,16,24,17)
+sexos <- c('F','F','M','M')
+
+datos <- data.frame(
+  'edad' = edades,
+  'sexo' = sexos
+)
+
+for(i in 1:dim(datos)[1]){
+  antro(datos[i,1],datos[i,2])
+}
+
+#mi primera grafica en R
+edades <- c(22,23,25,26,21,17,34,28,23,24,27,76,65,45,87,43,54)
+
+salary <- function(edad){
+  s <- 6000 + (edad-18)*500 + rnorm(length(edad),0,1500)
+  return(s)
+}
+
+salario_model <- salary(edades)
+
+plot(edades,salario_model)
+
+#TAREA
+
+#mi primera simulacion
+# 10 personas
+# 3 variables correlacionadas a una variable de control
+# para cada variable, graficar la correlacion
+
+edades <-seq(0,100,5)
+edades
