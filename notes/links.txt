@@ -7,7 +7,7 @@ num_clase,link
 6,https://youtu.be/8EsXRTCjK3w
 7,https://youtu.be/xeJCCafxy-4
 8,https://youtu.be/ZSzq0vA8klA
-9,
+9,https://youtu.be/j6wj0wSjm_E
 10,
 11,
 12,
